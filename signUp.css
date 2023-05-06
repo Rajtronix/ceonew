@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* =============== SIGN UP ============== */
+.popup {
+  height: 50vh;
+
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  right: 50%;
+
+  padding: 6rem 7rem 2rem 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  transform: translate(-50%, 5%) scale(0.1);
+
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  top: 25%;
+  transform: translate(-50%, -5%) scale(1);
+  visibility: visible;
+}
+
+.popup .container {
+  height: 30rem;
+  width: 40rem;
+
+  border-radius: 30px;
+  padding: 1.5rem;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.603),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+
+  box-shadow: var(--shadow1);
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.signLeft {
+  border-radius: 30px 0px 0px 30px;
+}
+
+.signLeft h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--firstColor);
+
+  margin-bottom: 2rem;
+}
+
+.packages,
+.countryCode {
+  background: transparent;
+  width: 13rem;
+  padding: 10px 0px;
+  border-bottom: solid 1px rgb(83, 83, 83);
+  margin-bottom: 13px;
+}
+
+.countryCode {
+  width: fit-content;
+}
+
+.numEmail span {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.formName {
+  display: flex;
+  flex-direction: column;
+}
+
+.numEmail .number {
+  width: 10rem;
+}
+
+.formName input,
+.numEmail input {
+  height: 2.7rem;
+  width: 11rem;
+
+  background: transparent;
+  width: 13rem;
+  padding: 10px 5px;
+  border-bottom: solid 1px rgb(83, 83, 83);
+  margin-bottom: 13px;
+}
+
+.numEmail input {
+  width: 14rem;
+}
+
+.signupForm label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  margin-bottom: 0.6rem;
+}
+
+.checkbox {
+  width: 20px;
+}
+
+.signupForm label a {
+  font-size: 0.8rem;
+  color: red;
+  text-decoration: underline;
+}
+
+.signRight {
+  border-radius: 0px 30px 30px 0px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signRight img {
+  width: 25rem;
+  margin-right: -2rem;
+}
+
+.signRight button {
+  background: transparent;
+  cursor: pointer;
+}
+
+/* ============= MEDIA QUERY ============= */
+@media only screen and (max-width: 991px) {
+  .popup {position: absolute;}
+
+  .signRight img {display: none;}
+
+  .popup .container {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .signLeft h3 {
+    min-width: 12rem;
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 0.5rem;
+  }
+
+  .signRight button {margin-bottom: 22rem;}
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+}

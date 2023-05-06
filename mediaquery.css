@@ -1,0 +1,147 @@
+@media only screen and (max-width: 991px) {
+  /* ========== NAVBAR ========== */
+  nav .navBar {
+    width: 100vw;
+    padding: 0rem 1rem;
+  }
+
+  /* ========== MAINLINK ========== */
+  .mainLink {
+    position: fixed;
+    flex-direction: column;
+    top: 4.2rem;
+    right: 2%;
+    height: fit-content;
+    width: 18rem;
+    gap: 0;
+    display: none;
+    background: var(--thirdColor);
+  }
+
+  .mainLink li a {
+    background: var(--thirdColor);
+    width: 18rem;
+    color: var(--firstColor);
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+  }
+
+  .mainLink li a:hover {
+    background: #005f492c;
+    color: rgb(7, 7, 7);
+  }
+
+  /* ========== NAV-BUTTON ========== */
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--thirdColor);
+    cursor: pointer;
+  }
+
+  nav button#close-menu-button {
+    display: none;
+  }
+
+  /* ========== HERO-IMG ========== */
+  .hero .left img {
+    display: none;
+    overflow: hidden;
+  }
+
+  /* ========== HERO SECTION ========== */
+  .hero {
+    padding: 7rem 1.5rem 0rem 1.5rem;
+    height: 90vh;
+  }
+
+  .hero .right {
+    margin-bottom: 6rem;
+  }
+
+  /* ========== SECONDHERO ========== */
+  .secondHero {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 1.5rem 0rem 1.5rem;
+  }
+
+  .secondHero h2 {font-size: 2.5rem;}
+
+  .secondHero .post {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  .secondHero .left {width: 100vw; padding:0rem 1.5rem;}
+
+  .secondHero .right .testimonialCont {
+    margin-top: -7rem;
+    max-width: 80%;
+    margin: -10rem auto 2rem auto;
+  }
+
+  /* ========== PROCEDURE ========== */
+  .procedure {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+  .procedure .container div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .procedure .container div article {
+    width: fit-content;
+    height: 11rem;
+  }
+
+  .procedure .container div article p {
+    min-width: 10rem;
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    padding: 1rem 3rem;
+  }
+
+  footer .container {
+    place-content: center;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width:991px){
+  .secondHero .left {width: 80vw; padding:0rem 1.5rem; margin-bottom: 15rem;}
+ 
+}
+
+
+
+@media only screen and (min-width: 991px)and (max-width: 1200px) {
+  /* ========== NAVBAR ========== */
+  nav .navBar {padding: 0 3rem;}
+
+  /* ========== HEROSECTION ========== */
+  .hero {padding: 5rem 3rem 0rem 3rem;}
+
+  .hero .left img {
+    width: 26rem;
+    overflow: hidden;
+  }
+
+  /* ========== PROCEDURE ========== */
+  .procedure .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+}
